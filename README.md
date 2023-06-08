@@ -47,23 +47,23 @@ does not exist.
 
 The REST API for the application have the following endpoints:
 
-GET /api/mutant/all
+a)GET /api/mutant/all
 
  Returns a list of all Mutant objects in the mutant.json file. This includes all attributes associated with
 each object.
 
-GET /api/mutant/{id}
+b)GET /api/mutant/{id}
 
 Returns an object corresponding to a mutant with the specified id. For example, /api/mutant/3 would
 return the Mutant object corresponding to id=3.
 
-POST /api/mutant/add
+c)POST /api/mutant/add
 
  Create a new Mutant.
  Returns HTTP 201: Created.
  Expected body contents include all attributes of the new Mutant.
 
-DELETE /api/mutant/{id}
+d)DELETE /api/mutant/{id}
 
  Removes the mutant with the specified id.
  Returns HTTP 204: No content.
